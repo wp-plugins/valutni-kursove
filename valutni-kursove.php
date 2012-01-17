@@ -4,7 +4,7 @@ Plugin Name: Валутни Курсове
 Plugin Script: valutni-kursove.php
 Plugin URI: http://marto.lazarov.org/plugins/valutni-kursove
 Description: Easiest way to show exchange rates of the Bulgarian National Bank
-Version: 1.0.0
+Version: 1.0.1
 Author: mlazarov
 Author URI: http://marto.lazarov.org/
 */
@@ -22,8 +22,8 @@ if (class_exists('WP_Widget')) {
 		function Valutni_Kursove_Widget(){
 			$widget_ops = array(
 							'classname' => 'widget_valutni_kursove',
-							'description' => 'Show exchange rates of the Bulgarian National Bank. Изведете лесно валутните курсове на БНБ във вашия блог' );
-			$this->WP_Widget('valutni_kursove', '', $widget_ops);
+							'description' => 'Show exchange rates of the Bulgarian National Bank.<br/> Изведете лесно валутните курсове на БНБ във вашия блог' );
+			$this->WP_Widget('valutni_kursove', 'Валутни Курсове', $widget_ops);
 			$this->settings = $this->get_settings();
 			if(!$this->settings['updated'] || $this->settings['updated']<time()-3600) $this->getFreshData();
 		}
@@ -61,7 +61,7 @@ if (class_exists('WP_Widget')) {
 			if ( !empty( $title ) ) { echo $args['before_title'] . $title . $args['after_title']; };
 			echo '<table border="0">';
 			foreach($currencies as $currency){
-				echo '<tr><td>'.$this->settings['rates']->{$currency}->ratio.'</td><td> '.$currency.'</td><td> = </td><td> '.$this->settings['rates']->{$currency}->rate.' лв</td></tr>';
+				echo '<tr><td align="right">'.$this->settings['rates']->{$currency}->ratio.'&nbsp;</td><td>&nbsp;'.$currency.'</td><td>&nbsp;=&nbsp;</td><td>&nbsp;'.$this->settings['rates']->{$currency}->rate.' лв</td></tr>';
 			}
 			echo '</table>';
 

@@ -2,7 +2,7 @@
 Tags: valuta, kurs, levove, dolari, evro, bgn, eur, lev, usd, валутни курсове, валутен курс
 Requires at least: 2.4
 Tested up to: 3.3.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Donate link: http://marto.lazarov.org/plugins/valutni-kursove
 Contributors: mlazarov
 
@@ -27,6 +27,9 @@ I'm collection tips and FAQ on [this page](http://marto.lazarov.org/plugins/valu
 so I can update it more easly.
 
 == Changelog ==
+
+= 1.0.1 =
+* Design bugfixes
 
 = 1.0.0 =
 * First release
