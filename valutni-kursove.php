@@ -4,7 +4,7 @@ Plugin Name: Валутни Курсове
 Plugin Script: valutni-kursove.php
 Plugin URI: http://marto.lazarov.org/plugins/valutni-kursove
 Description: Easiest way to show exchange rates of the Bulgarian National Bank
-Version: 1.0.1
+Version: 1.0.2
 Author: mlazarov
 Author URI: http://marto.lazarov.org/
 */
