@@ -40,6 +40,6 @@ so I can update it more easly.
 
 == Screenshots ==
 
-1. screenshot-01.png
-1. screenshot-02.png
+1. The widget
+2. Config options
 
