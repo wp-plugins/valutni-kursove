@@ -4,7 +4,7 @@ Plugin Name: Валутни Курсове
 Plugin Script: valutni-kursove.php
 Plugin URI: http://marto.lazarov.org/plugins/valutni-kursove
 Description: Easiest way to show exchange rates of the Bulgarian National Bank
-Version: 1.0.3
+Version: 2.0.0
 Author: mlazarov
 Author URI: http://marto.lazarov.org/
 */
@@ -15,10 +15,10 @@ if (class_exists('WP_Widget')) {
 		var $plugin_url;
 		var $settings;
 		var $currencies = array('AUD', 'BRL', 'CAD', 'CHF', 'CNY', 'CZK', 'DKK',
-								'GBP', 'HKD', 'HRK', 'HUF', 'IDR', 'ILS', 'INR',
-								'JPY', 'KRW', 'LTL', 'LVL', 'MXN', 'MYR', 'NOK',
-								'NZD', 'PHP', 'PLN', 'RON', 'RUB', 'SEK', 'SGD',
-								'THB', 'TRY', 'USD', 'XAU', 'ZAR');
+								'EUR', 'GBP', 'HKD', 'HRK', 'HUF', 'IDR', 'ILS',
+								'INR', 'JPY', 'KRW', 'LTL', 'LVL', 'MXN', 'MYR',
+								'NOK', 'NZD', 'PHP', 'PLN', 'RON', 'RUB', 'SEK',
+								'SGD', 'THB', 'TRY', 'USD', 'XAU', 'ZAR');
 		function Valutni_Kursove_Widget(){
 			$widget_ops = array(
 							'classname' => 'widget_valutni_kursove',

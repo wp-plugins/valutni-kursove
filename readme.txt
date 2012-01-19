@@ -29,6 +29,10 @@ I'm collection tips and FAQ on [this page](http://marto.lazarov.org/plugins/valu
 so I can update it more easly.
 
 == Changelog ==
+
+= 2.0.0 =
+* Added EUR
+
 = 1.0.3 =
 * bugfixes
 
